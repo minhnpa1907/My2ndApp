@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:text="ĐẶT MUA COFFEE"
+            android:textAlignment="textEnd"
+            android:textColor="#00704a"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imLogo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:text="Chọn số lượng:"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvWantedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvWantedNumber"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tvWantedNumber"
+            android:text="-"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvFinalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Bạn đang mua 0 ly coffee"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Đơn giá: 8,000 VND/ly"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:text="ĐẶT HÀNG"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Tổng tiền: 0 VND"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+</LinearLayout>
